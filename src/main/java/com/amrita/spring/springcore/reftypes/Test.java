@@ -6,8 +6,8 @@ public class Test {
 
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("com/amrita/spring/springcore/reftypes/config.xml");
-		Student students = (Student) context.getBean("student");
-		System.out.println(students);
+		Student student = (Student) context.getBean("student");
+		System.out.println(student);
 		
 	}
 
