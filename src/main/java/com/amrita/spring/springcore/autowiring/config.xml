@@ -10,5 +10,5 @@
 	
 	<bean class="com.amrita.spring.springcore.autowiring.Address" name="address" p:hno="123" p:street="Hera Misa" p:city="San diego" />
 	<bean class="com.amrita.spring.springcore.autowiring.Employee" 
-	name="employee" autowire="byName" />
+	name="employee" autowire="constructor" />
 </beans>

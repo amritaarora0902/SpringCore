@@ -2,7 +2,9 @@ package com.amrita.spring.springcore.autowiring;
 
 public class Employee {
 
-	
+	Employee(Address address){
+		this.address = address;
+	}
 	private Address address;
 
 	public Address getAddress() {
