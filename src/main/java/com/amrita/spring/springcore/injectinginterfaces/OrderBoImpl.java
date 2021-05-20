@@ -1,7 +1,12 @@
 package com.amrita.spring.springcore.injectinginterfaces;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("bo")
 public class OrderBoImpl implements OrderBO {
 	
+	@Autowired
 	private OrderDAO dao;
 	
 	@Override

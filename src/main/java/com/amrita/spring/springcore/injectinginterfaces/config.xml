@@ -7,9 +7,6 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 	
-	<bean class="com.amrita.spring.springcore.injectinginterfaces.OrderDAOImpl" name="dao" />
-	
-	<bean class="com.amrita.spring.springcore.injectinginterfaces.OrderBoImpl" name="bo">
-		<property name="dao" ref="dao" />
-	</bean>
+	<context:component-scan 
+	base-package="com.amrita.spring.springcore.injectinginterfaces" />
 </beans>
